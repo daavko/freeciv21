@@ -7,6 +7,8 @@
 Welcome to the Freeciv21 manual
 *******************************
 
+Hello! I'm a change!
+
 Welcome to the documentation of the Freeciv21 project brought to you by the
 `longturn.net <https://longturn.net>`_ community. The documentation is organized in five categories:
 
