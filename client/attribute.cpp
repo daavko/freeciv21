@@ -47,10 +47,7 @@ attr_key::attr_key(int k, int i, int x0, int y0)
 }
 
 inline bool operator==(const attr_key &pkey1, const attr_key &pkey2)
-{
-  return pkey1.key == pkey2.key && pkey1.id == pkey2.id && pkey1.x == pkey2.x
-         && pkey1.y == pkey2.y;
-}
+{return pkey1.key == pkey2.key && pkey1.id == pkey2.id && pkey1.x == pkey2.x && pkey1.y == pkey2.y;}
 
 inline uint qHash(const attr_key &pkey, uint seed)
 {
