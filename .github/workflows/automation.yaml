@@ -16,11 +16,12 @@ jobs:
     if: >-
       github.event.issue.pull_request
       && contains(github.event.comment.body, 'Auto clang-format')
-      && (github.event.comment.user.id == github.event.issue.user.id
-          || github.event.comment.author_association == 'OWNER'
-          || github.event.comment.author_association == 'MEMBER'
-          || github.event.comment.author_association == 'COLLABORATOR')
+    #  && (github.event.comment.user.id == github.event.issue.user.id
+    #      || github.event.comment.author_association == 'OWNER'
+    #      || github.event.comment.author_association == 'MEMBER'
+    #      || github.event.comment.author_association == 'COLLABORATOR')
     steps:
+      - uses: hmarr/debug-action@v2
       - uses: actions/github-script@v5
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
