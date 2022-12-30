@@ -37,6 +37,8 @@ jobs:
           fetch-depth: 0
       - name: Checkout PR
         run: gh pr checkout ${{ github.event.issue.number }}
+        env:
+          GH_TOKEN: ${{ github.token }}
       - name: Install clang-format-11
         run: |
           sudo apt-get install clang-format-11
