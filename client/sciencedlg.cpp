@@ -268,7 +268,7 @@ science_report::science_report() : QWidget()
   researching_combo = new QComboBox();
   auto sci_layout = new QGridLayout();
   res_diag = new research_diagram();
-  auto scroll = new QScrollArea();
+    auto scroll = new QScrollArea();
 
   progress->setTextVisible(true);
   progress_label->setSizePolicy(size_fixed_policy);
